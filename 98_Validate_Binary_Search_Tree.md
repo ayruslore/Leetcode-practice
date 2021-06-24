@@ -23,7 +23,7 @@ Output: True
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isValidBST(self, root: TreeNode) -> bool:
+    def isValidBST(self, root):
         pre, cur, stack = None, root, []
         while stack or cur:
             while cur:

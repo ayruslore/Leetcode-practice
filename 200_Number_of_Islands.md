@@ -4,7 +4,7 @@ Given an `m x n` 2D binary grid `grid` which represents a map of `'1'`s (land) a
 
 An **island** is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water.
 
-**Example 1:**
+**Example:**
 ```
 Input: grid = [
   ["1","1","1","1","0"],
@@ -19,7 +19,7 @@ Output: 1
 
 ```python3
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
+    def numIslands(self, grid):
         rows = len(grid)
         cols = len(grid[0])
         def markIslands(r, c):

@@ -2,7 +2,7 @@
 
 Given a string `s`, return the longest palindromic substring in `s`.
 
-**Example 1:**
+**Example:**
 ```
 Input: s = "babad"
 Output: "bab"
@@ -21,7 +21,7 @@ class Solution:
             right += 1
         return right - left - 1
 
-    def longestPalindrome(self, s: str) -> str:
+    def longestPalindrome(self, s):
         if s == None or len(s) < 1:
             return ""
         start = 0
